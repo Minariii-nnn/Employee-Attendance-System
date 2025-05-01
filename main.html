@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Attendance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  
+  <div class="sidebar" id="sidebar">
+    <a href="#">Admin Site</a>
+    <a href="#">Leave Request</a>
+    <a href="#">Payroll</a>
+    <a href="#">Early In</a>
+    <a href="#">Late</a>
+    <a href="#">Overtime</a>
+  </div>
+
+  
+  <div class="menu-icon" id="menuToggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="container">
+    <header>
+      <img src="/assets/Messenger_creation_505B1917-CADE-4544-B28B-43B307CED493.jpeg" alt="Logo" />
+      <p>Time Keeper</p>
+    </header>
+
+    <form id="attendanceForm">
+      <div class="form-field">
+        <label for="employeeName">Employee Name</label>
+        <input type="text" id="employeeName" placeholder="Enter name" required>
+      </div>
+      <div class="form-field">
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+      </div>
+      <div class="form-field">
+        <label for="timeIn">Time In</label>
+        <input type="time" id="timeIn" required>
+      </div>
+      <div class="form-field">
+        <label for="timeOut">Time Out</label>
+        <input type="time" id="timeOut" required>
+      </div>
+      <div class="form-field" style="grid-column: span 2;">
+        <label for="status">Status</label>
+        <select id="status" required>
+          <option value="">-- Select Status --</option>
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+          <option value="On Leave">On Leave</option>
+        </select>
+      </div>
+      <button type="submit">Submit Attendance</button>
+    </form>
+
+    <table id="attendanceTable">
+      <thead>
+        <tr>
+          <th>Employee Name</th>
+          <th>Date</th>
+          <th>Time In</th>
+          <th>Time Out</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <<script src="main.js
+  ">js
+  </script>
+</body>
+</html>
